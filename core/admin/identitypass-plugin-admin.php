@@ -143,7 +143,7 @@
                 <div class="wrap">
                     <h1>Identitypass KYC Configuration</h1>
                     <h2>API Keys Settings</h2>
-                    <span>Get your API Keys <a href="settings/developer" target="_blank">here</a> </span>
+                    <span>Don't have your API Keys? <br>Get them here: <a href="https://dashboard.myidentitypass.com/settings" target="_blank">here</a> </span>
                     <form method="post" action="options.php">
                         <?php settings_fields('idplugin-settings-pallet');
                         do_settings_sections('idplugin-settings-pallet'); ?>

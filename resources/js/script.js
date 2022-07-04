@@ -53,24 +53,24 @@ jQuery(document).ready(function($) {
                 console.log("Response::");
                 console.log("Callback Response", response);
 
-                jQuery.ajax({
-                    type : "post",
-                    dataType : "json",
-                    url : myAjax.ajaxurl,
-                    data : {action: "my_price_request", data : data, nonce: nonce},
-                    success: function(response) {
-                       if(response.type == "success") {
-                          alert(response.data);
-                       }else{
-                          alert("error occured");
-                       }
-                    },
-                    error: function (xhr, ajaxOptions, thrownError) {
-                       console.log(xhr.status);
-                       console.log(thrownError);
-                       alert('major error');
-                    }
-                 })
+                // jQuery.ajax({
+                //     type : "post",
+                //     dataType : "json",
+                //     url : myAjax.ajaxurl,
+                //     data : {action: "my_price_request", data : data, nonce: nonce},
+                //     success: function(response) {
+                //        if(response.type == "success") {
+                //           alert(response.data);
+                //        }else{
+                //           alert("error occured");
+                //        }
+                //     },
+                //     error: function (xhr, ajaxOptions, thrownError) {
+                //        console.log(xhr.status);
+                //        console.log(thrownError);
+                //        alert('major error');
+                //     }
+                //  })
             }
         });
     });
