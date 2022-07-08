@@ -3,6 +3,26 @@ jQuery(document).ready(function($) {
     $('#idx_init').on('click', function(e) {
         e.preventDefault();
 
+        // jQuery.ajax({
+        //     type : "post",
+        //     dataType : "json",
+        //     url : myAjax.ajaxurl,
+        //     data : {action: "my_price_request", data : data, nonce: nonce},
+        //     success: function(response) {
+        //        if(response.type == "success") {
+        //           alert(response.data);
+        //        }else{
+        //           alert("error occured");
+        //        }
+        //     },
+        //     error: function (xhr, ajaxOptions, thrownError) {
+        //        console.log(xhr.status);
+        //        console.log(thrownError);
+        //        alert('major error');
+        //     }
+        //  })
+
+
         const modal = `
         <div class="id-modal" id="id-modal-name">
             <div class="id-modal-sandbox"></div>
@@ -41,6 +61,7 @@ jQuery(document).ready(function($) {
 
         $(".id-modal").css({ "display": "none" });
         $(".id-modal").remove();
+        
 
         var paymentEng =  IdentityKYC.verify({
             merchant_key: pluginScope.key,
@@ -52,6 +73,7 @@ jQuery(document).ready(function($) {
             callback: function (response) {
                 console.log("Response::");
                 console.log("Callback Response", response);
+
 
                 // jQuery.ajax({
                 //     type : "post",

@@ -61,6 +61,8 @@ class Idx_pfd_checkout {
     }
 
     public function wp_idx_init() {
+        include_once plugin_dir_path( __FILE__ ) . '../../core/includes/verifier.php';
+
         $this->initplugin_script();
         
         // wp_enqueue_script( 'functionality-scripts', plugin_dir_url( __FILE__ ) . '../../core/script.js', array('jquery') );
