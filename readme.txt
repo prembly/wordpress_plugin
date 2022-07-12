@@ -1,9 +1,9 @@
 === KYC verification by Identitypass ===
-Contributors: identitypass
+Contributors: identitypass, Os-prog
 Tags: identitypass, verification, kyc, kyb
 Requires at least: 3.1
 Tested up to: 6.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,10 @@ Manual installation entails downloading our verification plugin file and uploadi
 
 Automatic updates should work flawlessly; however, ensure you backup your site just in case. 
 
+= INVOLCKING THE PLUGIN =
+
+You can inock the plugin from any of your desired button on your wordpress app by simply adding `idx_init` as the value ID of the button, we automatically bind our checkout widget with any button with such ID.
+
 == FAQ ==
 
 Where can I find help to understand how Identity Checker Widget Works? 
@@ -83,3 +87,13 @@ You can ask for assistance on our support channel if you get stuck. You can also
 Identity Checker is exceptional. Can I add my input? 
 
 Yes, you can! Join our developers' community 
+
+== CHANGELOG ==
+= 1.0.1 =
+* Update on the assets and Readme on installation and setup
+= 1.0.0 =
+* Initial release
+
+== SCREENSHOT ==
+1. The first widget to take customers basic
+2. The follow widget to initiate the face biometric process
