@@ -3,6 +3,9 @@ jQuery(document).ready(function($) {
     $('#idx_init').on('click', function(e) {
         e.preventDefault();
 
+        console.log("A: "+pluginScope.testing+" :B");
+        console.log(pluginScope.key);
+
         // jQuery.ajax({
         //     type : "post",
         //     dataType : "json",
@@ -62,7 +65,6 @@ jQuery(document).ready(function($) {
         $(".id-modal").css({ "display": "none" });
         $(".id-modal").remove();
         
-
         var paymentEng =  IdentityKYC.verify({
             merchant_key: pluginScope.key,
             first_name: firtName,
@@ -73,7 +75,6 @@ jQuery(document).ready(function($) {
             callback: function (response) {
                 console.log("Response::");
                 console.log("Callback Response", response);
-
 
                 // jQuery.ajax({
                 //     type : "post",

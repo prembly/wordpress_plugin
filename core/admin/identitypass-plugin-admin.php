@@ -98,7 +98,7 @@
                     __( 'Configuration', 'identitypass_checkout' ),
                     'manage_options',
                     'edit.php?post_type=identity_kyc_config',
-                    'show_admin_settings_screen',
+                    'show_admin_settings_screen'
                 );
                 // add_submenu_page('edit.php?post_type=identity_configuration_form', 'Configuration', 'Configuration', 'edit_posts', basename(__FILE__), 'show_admin_settings_screen');
             }
@@ -140,42 +140,70 @@
             {
     
     ?>
-                <div class="wrap">
+                <div class="wrap idx_x_verification">
                     <h1>Identitypass KYC Configuration</h1>
                     <h2>API Keys Settings</h2>
-                    <span>Don't have your API Keys? <br>Get them here: <a href="https://dashboard.myidentitypass.com/settings" target="_blank">here</a> </span>
+                    <div>Don't have your API Keys? <br>Get them here: <a href="https://dashboard.myidentitypass.com/settings" target="_blank">here</a> </div><br><br>
                     <form method="post" action="options.php">
                         <?php settings_fields('idplugin-settings-pallet');
                         do_settings_sections('idplugin-settings-pallet'); ?>
                         <table class="form-table setting_page">
                             <tr valign="top">
-                                <th scope="row">KYC Mode</th>
+                                <!-- <th scope="row">KYC Mode</th>
     
-                                <td>
+                                <td> -->
+                                <!-- <div> -->
+                                <div class="input-group group-select">
                                     <select class="form-control" name="kyc_mode" id="parent_id">
                                         <option value="test" <?php echo kyc_mode_check('test', esc_attr(get_option('kyc_mode'))) ?>>Test Mode</option>
                                         <option value="live" <?php echo kyc_mode_check('live', esc_attr(get_option('kyc_mode'))) ?>>Live Mode</option>
                                     </select>
+                                    <label for="kyc_tsk">KYC Mode</label>
+                                </div>
                             </tr>
                             <tr valign="top">
-                                <th scope="row">Test Secret Key</th>
+                                <div class="input-group">
+                                    <input class="form-control" type="text"  value="<?php echo esc_attr(get_option('kyc_tsk')); ?>" name="kyc_tsk" required="required" placeholder="Test Secret API Key">
+                                    <label for="kyc_tsk">Test Secret API Key</label>
+                                    <div class="padlock-mark">&#128274;</div>
+                                </div>
+
+                                <!-- <th scope="row">Test Secret API Key</th>
                                 <td>
                                     <input type="text" name="kyc_tsk" value="<?php echo esc_attr(get_option('kyc_tsk')); ?>" />
-                                </td>
+                                </td> -->
                             </tr>
     
                             <tr valign="top">
-                                <th scope="row">Test Public Key</th>
-                                <td><input type="text" name="kyc_tpk" value="<?php echo esc_attr(get_option('kyc_tpk')); ?>" /></td>
+                                <div class="input-group">
+                                    <input class="form-control" type="text" value="<?php echo esc_attr(get_option('kyc_tpk')); ?>" name="kyc_tpk" required="required" placeholder="Test Public API Key">
+                                    <label for="kyc_tpk">Test Public API Key</label>
+                                    <div class="padlock-mark">&#128274;</div>
+                                </div>
+
+                                <!-- <th scope="row">Test Public API Key</th>
+                                <td><input type="text" name="kyc_tpk" value="<?php echo esc_attr(get_option('kyc_tpk')); ?>" /></td> -->
                             </tr>
     
                             <tr valign="top">
-                                <th scope="row">Live Secret Key</th>
-                                <td><input type="text" name="kyc_lsk" value="<?php echo esc_attr(get_option('kyc_lsk')); ?>" /></td>
+                                <div class="input-group">
+                                    <input class="form-control" type="text" value="<?php echo esc_attr(get_option('kyc_lsk')); ?>" name="kyc_lsk" required="required" placeholder="Secret API Key">
+                                    <label for="kyc_lsk">Secret API Key</label>
+                                    <div class="padlock-mark">&#128274;</div>
+                                </div>
+
+                                <!-- <th scope="row">Secret API Key</th>
+                                <td><input type="text" name="kyc_lsk" value="<?php echo esc_attr(get_option('kyc_lsk')); ?>" /></td> -->
                             </tr>
                             <tr valign="top">
-                                <th scope="row">Live Public Key</th>
-                                <td><input type="text" name="kyc_lpk" value="<?php echo esc_attr(get_option('kyc_lpk')); ?>" /></td>
+                                <div class="input-group">
+                                    <input class="form-control" type="text" value="<?php echo esc_attr(get_option('kyc_lpk')); ?>" name="kyc_lpk" required="required" placeholder="Test Public API Key">
+                                    <label for="kyc_lpk">Public API Key</label>
+                                    <div class="padlock-mark">&#128274;</div>
+                                </div>
+
+                                <!-- <th scope="row">Public API Key</th>
+                                <td><input type="text" name="kyc_lpk" value="<?php echo esc_attr(get_option('kyc_lpk')); ?>" /></td> -->
                             </tr>
     
                         </table>

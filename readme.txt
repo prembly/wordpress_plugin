@@ -1,4 +1,4 @@
-=== KYC verification by Identitypass ===
+=== Identitypass Verification ===
 Contributors: identitypass, Os-prog
 Tags: identitypass, verification, kyc, kyb
 Requires at least: 3.1

@@ -67,6 +67,9 @@ class Idx_pfd_checkout {
         
         // wp_enqueue_script( 'functionality-scripts', plugin_dir_url( __FILE__ ) . '../../core/script.js', array('jquery') );
 
+        echo (esc_attr(get_option('kyc_mode')) == 'test');
+        echo esc_attr(get_option('kyc_mode'));
+
         wp_enqueue_script(
             'script-handle',
             plugin_dir_url( __FILE__ ) . '../../resources/js/script.js',
