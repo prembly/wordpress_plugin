@@ -90,14 +90,7 @@
                     5
                 );
                 
-                add_submenu_page(
-                    'identitypass_checkout',
-                    __( 'Configuration', 'identitypass_checkout' ),
-                    __( 'Configuration', 'identitypass_checkout' ),
-                    'manage_options',
-                    'edit.php?post_type=identity_kyc_config',
-                    'show_admin_settings_screen'
-                );
+                add_submenu_page('identitypass_checkout', __( 'Configuration', 'identitypass_checkout' ), __( 'Configuration', 'identitypass_checkout' ), 'manage_options', 'edit.php?post_type=identity_kyc_config', 'show_admin_settings_screen');
                 // add_submenu_page('edit.php?post_type=identity_configuration_form', 'Configuration', 'Configuration', 'edit_posts', basename(__FILE__), 'show_admin_settings_screen');
             }
             // background-image: url('. get_field ("option", "logo_image") . ');
