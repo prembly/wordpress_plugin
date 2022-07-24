@@ -89,6 +89,8 @@ Identity Checker is exceptional. Can I add my input?
 Yes, you can! Join our developers' community 
 
 == CHANGELOG ==
+= 1.0.2 =
+* Minor bug fixed and Readme update on installation and setup
 = 1.0.1 =
 * Update on the assets and Readme on installation and setup
 = 1.0.0 =

@@ -87,8 +87,6 @@
                     'identitypass_checkout', // what is displayed as the name on the url
                     'wpplugin_settings_page_markup',
                     plugins_url('../../resources/sc_images/idpass-logo.png', __FILE__),
-                    // 'dashicons-wordpress-alt',
-                    // plugins_url('../sc_images/idpass-logo.png', __FILE__),
                     5
                 );
                 
