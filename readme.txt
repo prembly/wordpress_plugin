@@ -44,7 +44,7 @@ You can also follow us on Twitter and LinkedIn! @myidentitypass
 
 = MINIMUM REQUIREMENTS =
 
-Confirm that your server can connect to the Identitypass API. You can find more details about this requirement can here:(attach the necessary link) 
+Confirm that your server can connect to the Identitypass API.
 
 An Identitypass account 
 
@@ -70,9 +70,9 @@ Manual installation entails downloading our verification plugin file and uploadi
 
 Automatic updates should work flawlessly; however, ensure you backup your site just in case. 
 
-= INVOLCKING THE PLUGIN =
+= INVOKING THE PLUGIN =
 
-You can inock the plugin from any of your desired button on your wordpress app by simply adding `idx_init` as the value ID of the button, we automatically bind our checkout widget with any button with such ID.
+You can invoke the plugin from any of your desired button on your wordpress app by simply adding `idx_init` as the value ID of the button, we automatically bind our checkout widget with any button with such ID.
 
 == FAQ ==
 

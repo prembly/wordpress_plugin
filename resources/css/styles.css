@@ -27,7 +27,7 @@
 .id-modal-box {
   position: relative;
   width: 80%;
-  max-width: 920px;
+  max-width: 860px;
   margin: 100px auto;
   animation-name: id-modalbox;
   animation-duration: .4s;
@@ -35,7 +35,7 @@
 }
 
 .id-modal-header {
-  padding: 15px 80px;
+  padding: 13px 80px;
   background: linear-gradient(53.82deg,#1633a3 2.15%,#a514c9 95.03%)!important;
   /* background: #a514c9; */
   color: #ffffff;
@@ -109,7 +109,7 @@ p {
     cursor: pointer;
     right: -30px;
     position: relative;
-  }
+}
 
 .id-modal button.close-id-modal {
   outline: none;

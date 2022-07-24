@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
     $('#idx_init').on('click', function(e) {
         e.preventDefault();
-        
+
         // jQuery.ajax({
         //     type : "post",
         //     dataType : "json",
@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
                 <div class="id-modal-box">
                     <div class="id-modal-header">
                     <div class="close-id-modal">&#10006;</div> 
-                    <h1>Identitypass KYC modal</h1>
+                    <h1>Identitypass KYC Modal</h1>
                     </div>
                     <div class="id-modal-body">
                     <p><input type="text" name="firstname" id="idp_firstname" placeholder="Please enter your firstname" required /></p>
