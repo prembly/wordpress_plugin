@@ -67,9 +67,6 @@ class Idx_pfd_checkout {
         
         // wp_enqueue_script( 'functionality-scripts', plugin_dir_url( __FILE__ ) . '../../core/script.js', array('jquery') );
 
-        echo (esc_attr(get_option('kyc_mode')) == 'test');
-        echo esc_attr(get_option('kyc_mode'));
-
         wp_enqueue_script(
             'script-handle',
             plugin_dir_url( __FILE__ ) . '../../resources/js/script.js',
@@ -83,7 +80,7 @@ class Idx_pfd_checkout {
             'pluginScope',
             array(
                 'testing' => (esc_attr(get_option('kyc_mode')) == 'test') ? true : false,
-                'key' => (esc_attr(get_option('kyc_mode')) == 'test') ? esc_attr(get_option('kyc_tsk')) : esc_attr(get_option('kyc_lsk')),
+                'key' => (esc_attr(get_option('kyc_mode')) == 'test') ? esc_attr(get_option('kyc_tsk')) : esc_attr(get_option('kyc_lpk')),
                 'userRef' => 'wp_user' . $this->generate_user(8),
             )   
         );

@@ -2,10 +2,7 @@ jQuery(document).ready(function($) {
 
     $('#idx_init').on('click', function(e) {
         e.preventDefault();
-
-        console.log("A: "+pluginScope.testing+" :B");
-        console.log(pluginScope.key);
-
+        
         // jQuery.ajax({
         //     type : "post",
         //     dataType : "json",
