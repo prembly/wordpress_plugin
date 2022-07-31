@@ -74,7 +74,7 @@
                 }
                 return $actions;
             }
-
+            
             // add_filter('page_row_actions', 'idx_identity_add_view_payments', 10, 2);
             // plugin_dir_path( __FILE__ ) . '../../resources/sc_images/idpass-logo.png'
 

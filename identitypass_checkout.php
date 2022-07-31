@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Identitypass Verification
  * Description: Handle the basics checkout for the Identitypass widget
- * Version:      1.0.1
+ * Version:      1.0.2
  * License:      GPL-2.0+
  * Author:       Identitypass
  * Author URI:   https://myidentitypass.com
@@ -21,7 +21,7 @@ add_action('init', 'plugin_init');
 function plugin_init() {
     require_once plugin_dir_path( __FILE__ ) . 'core/includes/checkout.php';
     
-    $plugin = new Idx_pfd_checkout( 'Identitypass checkout', '1.0.0' );
+    $plugin = new Idx_pfd_checkout( 'Identitypass checkout', '1.0.2' );
     
     $plugin->run();
 }

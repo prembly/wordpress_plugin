@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
                 //     type : "post",
                 //     dataType : "json",
                 //     url : myAjax.ajaxurl,
-                //     data : {action: "my_price_request", data : data, nonce: nonce},
+                //     data : {action: "request", data : data, nonce: nonce},
                 //     success: function(response) {
                 //        if(response.type == "success") {
                 //           alert(response.data);
